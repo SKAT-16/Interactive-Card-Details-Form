@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Interactive Card Details Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="resources/main.css" />
+    <link
+      rel="shortcut icon"
+      href="resources/images/favicon-32x32.png"
+      type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main">
+      <button class="theme-changer"><span></span></button>
+      <div class="card-preview-section">
+        <div class="card-front-preview">
+          <img
+            src="resources/images/bg-card-front.png"
+            alt=""
+            class="card-fr-img" />
+          <img
+            src="resources/images/card-logo.svg"
+            alt="no-image"
+            class="card-logo-img" />
+          <p id="card-number-text">0000 0000 0000 0000</p>
+          <p id="card-name-text">Jane Appleseed</p>
+          <p id="exp-date-text">00/00</p>
+        </div>
+        <div class="card-back-preview">
+          <img
+            src="resources/images/bg-card-back.png"
+            alt=""
+            class="card-bc-img" />
+          <p id="cvc-number-text">000</p>
+        </div>
+      </div>
+
+      <div class="card-input-section">
+        <img
+          src="resources/images/bg-main-desktop.png"
+          alt="no-image"
+          class="bg-image" />
+        <form action="" method="get">
+          <label>CARDHOLDER NAME</label>
+          <br />
+          <input
+            type="text"
+            name=""
+            id="card-name"
+            placeholder="e.g. Jane Appleseed" />
+          <br />
+          <label id="card-number-label">CARD NUMBER</label>
+          <br />
+          <input
+            type="number"
+            name=""
+            id="card-number"
+            placeholder="e.g. 1234 5678 9123 0000"
+            maxlength="16" />
+          <h6 class="card-number-error-text"></h6>
+
+          <div class="card-date-section">
+            <div class="labels">
+              <label id="exp-date-label">EXP. DATE (MM/YY)</label>
+              <label id="cvc-label">CVC</label>
+            </div>
+            <div class="inputs">
+              <input type="number" name="" id="month" placeholder="MM" />
+              <input type="number" name="" id="year" placeholder="YY" />
+              <input type="number" name="" id="cvc" placeholder="e.g. 123" />
+            </div>
+            <div class="inputs-error-text">
+              <h6 class="month-error-text"></h6>
+              <h6 class="year-error-text"></h6>
+              <h6 class="cvc-error-text"></h6>
+            </div>
+          </div>
+          <input id="confirm-btn" type="button" value="Confirm" />
+        </form>
+
+        <div class="complete-section">
+          <img src="resources/images/icon-complete.svg" alt="" />
+          <h1>THANK YOU!!!</h1>
+          <h5>We've added your card details.</h5>
+          <input id="continue-btn" type="button" value="Continue" />
+        </div>
+      </div>
+    </div>
+    <script src="resources/js/script.js" async defer></script>
+  </body>
+</html>

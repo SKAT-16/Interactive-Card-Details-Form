@@ -1,0 +1,35 @@
+.card-preview-section {
+  top: 15%;
+  left: 8%;
+  width: 400px;
+  display: grid;
+  gap: 30px;
+}
+.card-preview-section .card-front-preview .card-logo-img {
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 15%;
+}
+.card-preview-section .card-front-preview #card-number-text {
+  font-size: 1.2em;
+}
+.card-preview-section .card-front-preview #card-name-text {
+  font-size: 0.7em;
+}
+.card-preview-section .card-front-preview #exp-date-text {
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  margin: 0px 0px 20px 80%;
+}
+.card-preview-section .card-back-preview #cvc-number-text {
+  font-size: 1.4em;
+}
+
+.card-input-section .bg-image {
+  width: 30%;
+  height: 100vh;
+}
+.card-input-section form {
+  width: 20em;
+  margin-left: 20%;
+}

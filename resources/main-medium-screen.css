@@ -1,0 +1,45 @@
+.card-preview-section {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.card-preview-section .card-front-preview {
+  margin-top: -20.1%;
+}
+.card-preview-section .card-front-preview .card-logo-img {
+  margin-top: 15px;
+  margin-left: 25px;
+  width: 20%;
+}
+.card-preview-section .card-front-preview #card-number-text {
+  font-size: 1.25em;
+}
+.card-preview-section .card-front-preview #card-name-text {
+  font-size: 0.6em;
+}
+.card-preview-section .card-front-preview #exp-date-text {
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  margin: 0px 0px 20px 85%;
+}
+.card-preview-section .card-back-preview #cvc-number-text {
+  font-size: 1.3em;
+}
+
+.card-input-section {
+  flex-direction: column;
+}
+.card-input-section .bg-image {
+  content: url("images/bg-main-mobile.png");
+  width: 100%;
+  height: 40vh;
+}
+.card-input-section form {
+  margin: 10vh auto;
+}
+.card-input-section .complete-section {
+  background-color: red;
+}
